@@ -4,8 +4,11 @@
 
 To see the live demo, click [here](https://rbhachu-the-mojo-blog.netlify.app/) :rocket:
 
+<div style="border:1px solid #000">
+
 ![Mojo Blog Preview](./src/images/mojo-blog.png)
 
+</div>
 
 ## Description
 <p>Add Description</p>
