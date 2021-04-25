@@ -1,13 +1,14 @@
-<h1 align="center">Repo Name</h1>
-
 [![Build Status](https://travis-ci.org/gelstudios/gitfiti.svg?branch=master)](https://travis-ci.org/gelstudios/gitfiti)
 
-[Live Link](https://github.com/rbhachu)
+<h1 align="center">Repo Name</h1>
+
+To see the live demo, click [here](https://github.com/rbhachu)
+
+[Mojo Blog Preview](./src/images/mojo-blog.png)
 
 ## Description
 <p>Add Description</p>
   (add screenshots)
-<!--![Mojo Blog Preview](./src/images/mojo-blog.png)-->
 
 
 ## Features
