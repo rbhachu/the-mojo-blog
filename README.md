@@ -1,77 +1,41 @@
-<h1 align="center">Welcome to Mojo Blog test 3👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
-</p>
+<h1 align="center">Repo Name</h1>
 
-> test descrip
+[![Build Status](https://travis-ci.org/gelstudios/gitfiti.svg?branch=master)](https://travis-ci.org/gelstudios/gitfiti)
 
-### 🏠 [Homepage](homepage.com)
-![Mojo Blog Preview](./src/images/mojo-blog.png)
+[Live Link](https://github.com/rbhachu)
+
+## Description
+<p>Add Description</p>
+  (add screenshots)
+<!--![Mojo Blog Preview](./src/images/mojo-blog.png)-->
 
 
-<<<<<<< HEAD
-
-### ✨ [Demo](https://rbhachu-the-mojo-blog.netlify.app/)
-
-## Install
-
-```sh
-npm install
-```
-
-## Usage
+## Features
+<p>Add Details</p>
 
 ```sh
 npm run start
 ```
 
-## Run tests
 
-```sh
-npm run test
-```
-
-## Author
-
-👤 **rishi**
+## Dependencies/NPM Modules?
+<p>Add Details</p>
 
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
-=======
-### ✨ [Demo](demo.com)
-
-## Install
+## Installation Instructions
+<p>Add Details Local/Remote</p>
 
 ```sh
 npm install
 ```
 
-## Usage
-
-```sh
-npm run start
-```
-
-## Run tests
-
-```sh
-npm run test
-```
 
 ## Author
+👤 **Rishi Singh Bhachu**
+✨ [GitHub](https://github.com/rbhachu)
+✨ [https://github.com/rbhachu](https://github.com/rbhachu)
 
-👤 **rishi**
 
 
 ## Show your support
-
 Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
->>>>>>> fe370bc73744dcb47c2c5955c34d2edd433a23cb
