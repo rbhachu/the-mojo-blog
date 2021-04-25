@@ -2,7 +2,7 @@
 
 <h1 align="center">Repo Name</h1>
 
-:rocket To see the live demo, click [here](https://rbhachu-the-mojo-blog.netlify.app/)
+To see the live demo, click [here](https://rbhachu-the-mojo-blog.netlify.app/) :rocket:
 
 ![Mojo Blog Preview](./src/images/mojo-blog.png)
 
@@ -33,10 +33,9 @@ npm install
 
 
 ## Author
-👤 **Rishi Singh Bhachu**
-:octocat: [GitHub](https://github.com/rbhachu)
-✨ [Linkedin](https://www.linkedin.com/in/rishisinghbhachu/)
-
+👤 **Rishi Singh Bhachu**<br>
+:octocat: [GitHub](https://github.com/rbhachu)<br>
+✨ <a target="_blank" title="https://www.linkedin.com/in/RishiSinghBhachu/" href="https://www.linkedin.com/in/RishiSinghBhachu/"><img src="https://img.shields.io/badge/-Rishi&nbsp;Singh&nbsp;Bhachu-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
 
 
 ## Show your support
