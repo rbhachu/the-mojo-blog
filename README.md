@@ -6,7 +6,7 @@
 > test descrip
 
 ### 🏠 [Homepage](homepage.com)
-![Mojo Blog Preview](./src/images/mojo-blog.png)
+![Mojo Blog Preview test2](./src/images/mojo-blog.png)
 
 
 <<<<<<< HEAD
