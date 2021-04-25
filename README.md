@@ -9,31 +9,35 @@ To see the live demo, click [here](https://rbhachu-the-mojo-blog.netlify.app/) :
 
 ## Description
 <p>Add Description</p>
-  (add screenshots)
+  (add screenshots? no)
 
 
 ## Features
 <p>Add Details</p>
-
-```sh
-npm run start
-```
+  (add screenshots, show what it can do?)
 
 
 ## Dependencies/NPM Modules?
 <p>Add Details</p>
 
-[module 1](https://rbhachu-the-mojo-blog.netlify.app/)
-[module 2](https://rbhachu-the-mojo-blog.netlify.app/)
-[module 3](https://rbhachu-the-mojo-blog.netlify.app/)
+[module 1](https://rbhachu-the-mojo-blog.netlify.app/)<br>
+[module 2](https://rbhachu-the-mojo-blog.netlify.app/)<br>
+[module 3](https://rbhachu-the-mojo-blog.netlify.app/)<br>
 [module 4](https://rbhachu-the-mojo-blog.netlify.app/)
 
 
 ## Installation Instructions
-<p>Add Details Local Machine/Remote Server</p>
+<p>Add details for Local Machine/Remote Server</p>
+<br>
+
 ### Local Machine
 <p>Add Details Local Machine/Remote Server</p>
 <br>
+
+```sh
+npm install
+```
+
 ### Remote Server
 <p>Add Details Local Machine/Remote Server</p>
 <br>
