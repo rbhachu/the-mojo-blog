@@ -33,7 +33,7 @@ To see the live demo, click [here](https://rbhachu-the-mojo-blog.netlify.app/) :
 <p>Add details for Local Machine/Remote Server</p>
 <br>
 
-### Local Machine
+__Local Machine__
 <p>Add Details Local Machine/Remote Server</p>
 <br>
 
