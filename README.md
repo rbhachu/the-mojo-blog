@@ -34,7 +34,7 @@ npm install
 
 ## Author
 👤 **Rishi Singh Bhachu**
-:octocat [GitHub](https://github.com/rbhachu)
+:octocat: [GitHub](https://github.com/rbhachu)
 ✨ [Linkedin](https://www.linkedin.com/in/rishisinghbhachu/)
 
 
