@@ -14,6 +14,7 @@ const Create = () => {
   const handleSubmit = (e) => {
   
     e.preventDefault(); // prevents form resetting on submission to allow us to capture input states
+    
     const blog = { postTitle, body, author }; // create object to capture to new blog entry and add to db.json file
     // console.log(blog); // check blog object capture details
     setIsPending(true); // setIsPending to 'true' so submit button is disabled and shows 'Add Blog...' progress status instead
