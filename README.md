@@ -2,7 +2,7 @@
 
 <h1 align="center">Repo Name</h1>
 
-<p> align="center">To see the live demo, click [here](https://rbhachu-the-mojo-blog.netlify.app/)</p>
+<p align="center">To see the live demo, click [here](https://rbhachu-the-mojo-blog.netlify.app/)</p>
 
 ![Mojo Blog Preview](./src/images/mojo-blog.png)
 
