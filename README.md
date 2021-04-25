@@ -23,9 +23,20 @@ npm run start
 ## Dependencies/NPM Modules?
 <p>Add Details</p>
 
+[module 1](https://rbhachu-the-mojo-blog.netlify.app/)
+[module 2](https://rbhachu-the-mojo-blog.netlify.app/)
+[module 3](https://rbhachu-the-mojo-blog.netlify.app/)
+[module 4](https://rbhachu-the-mojo-blog.netlify.app/)
+
 
 ## Installation Instructions
-<p>Add Details Local/Remote</p>
+<p>Add Details Local Machine/Remote Server</p>
+### Local Machine
+<p>Add Details Local Machine/Remote Server</p>
+<br>
+### Remote Server
+<p>Add Details Local Machine/Remote Server</p>
+<br>
 
 ```sh
 npm install
@@ -35,7 +46,7 @@ npm install
 ## Author
 👤 **Rishi Singh Bhachu**<br>
 :octocat: [GitHub](https://github.com/rbhachu)<br>
-✨ <a target="_blank" title="https://www.linkedin.com/in/RishiSinghBhachu/" href="https://www.linkedin.com/in/RishiSinghBhachu/"><img src="https://img.shields.io/badge/-Rishi&nbsp;Singh&nbsp;Bhachu-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
+<a target="_blank" title="https://www.linkedin.com/in/RishiSinghBhachu/" href="https://www.linkedin.com/in/RishiSinghBhachu/"><img src="https://img.shields.io/badge/-Rishi&nbsp;Singh&nbsp;Bhachu-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
 
 
 ## Show your support
