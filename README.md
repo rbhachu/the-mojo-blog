@@ -27,11 +27,11 @@ __The following dependencies are required to run this project;__
 
 [React v17.02 *](https://www.npmjs.com/package/react) - Used for site framework with React Hooks. Fetch to connect to REST API and convert to useable JSON format.<br>
 [React Router Dom v5.2.0 *](https://www.npmjs.com/package/react-router-dom) - Used for Pagination, History and Error 404 Page.<br>
-[Concurently v6.0.2 **](https://www.npmjs.com/package/concurrently) - Used to run multiple services from a single terminal session.<br>
+[Concurrently v6.0.2 **](https://www.npmjs.com/package/concurrently) - Used to run multiple services from a single terminal session.<br>
 [JSON Server v5 (Local only) **](https://www.npmjs.com/package/json-server) - Used to run a local machine version of the JSON API Server.<br>
 [Heroku (Remote only) **](https://elements.heroku.com/buttons/eecs130/json-server-heroku) - Used to run and host a remote version of the JSON API Server via Heroku servers (free too!).<br><br>
 *_Installed automatically_<br>
-**_Requires seperate manual installation_
+**_Requires separate manual installation_
 
 
 ## Installation Instructions
@@ -46,7 +46,7 @@ git clone https://github.com/rbhachu/the-mojo-blog.git
 npm install
 ```
 
-<p>Next you need to decide if you would like to run JSON server via your 'Local Machine' or 'Remotely' via Heorku servers (free).<p>
+<p>Next you need to decide if you would like to run JSON server via your 'Local Machine' or 'Remotely' via Heroku servers (free).<p>
 
 
 ### -JSON Server via Local Machine
@@ -74,8 +74,7 @@ REACT_APP_API_PATH="http://localhost:8000/blogs"
 <br>__Concurrently NPM Package__
 <p>As this project requires running React and JSON server at the sametime, it means you would normally have to open two Terminal sessions to run both services.</p>
 <p>However, with 'Concurrently' you can run mulitple services simutaneously' using only one terminal session, which is very usefull.</p>
-<p>To use 'Concurently', run the following command in your terminal to install it;
-</p>
+<p>To use 'Concurently', run the following command in your terminal to install it;</p>
 
 *Reference: [Concurently NPM Module](https://www.npmjs.com/package/concurrently)*
 
