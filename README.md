@@ -103,9 +103,9 @@ npm install -g concurrently
 ### -JSON Server via Heroku Remote Server
 <p>To use the remote version of JSON Server, follow the instructions from Heroku [here](https://elements.heroku.com/buttons/eecs130/json-server-heroku).</p>
 
-<p>In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, sitated at '/data/db.json/'</p>
+<p>In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, sitated at '/data/db.json/', but ignore the instructions in 'How it works' for port settings.</p>
 
-__JSON File__
+__JSON File example__
 ````json
 {
   "blogs": [
@@ -143,14 +143,14 @@ __.env file__<br>
 <p>Change the path value from;</p>
 
 ````json
-__*REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"*__
+REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"
 ````
 
 <p>to the path of your Remote JSON server on Heroku.</p>
 
 
 ````json
-__*REACT_APP_API_PATH="https://XXXX/blogs"*__
+REACT_APP_API_PATH="https://XXXX/blogs"
 ````
 
 __Example__
