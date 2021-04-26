@@ -3,7 +3,8 @@
 <h1 align="center">The Mojo React.js Blog</h1>
 <div align="center">
 
-View Live Demo **[here](https://rbhachu-the-mojo-blog.netlify.app/)** :rocket:
+:rocket: **[View Live Demo](https://rbhachu-the-mojo-blog.netlify.app/)** :rocket:<br>
+
 ![Mojo Blog Preview](./src/images/mojo-blog.png)
 
 </div>
@@ -44,7 +45,7 @@ git clone https://github.com/rbhachu/the-mojo-blog.git
 npm install
 ```
 
-<p>You then need to decide weather to run JSON server via your 'Local Machine' or 'Remotely' via Heorku servers.<p>
+<p>You then need to decide weather to run JSON server via your 'Local Machine' or 'Remotely' via Heorku servers (free).<p>
 
 
 ### -JSON Server via Local Machine
@@ -73,9 +74,9 @@ REACT_APP_API_PATH="http://localhost:8000/blogs"
 # REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"
 ````
 
-<br>__Concurently NPM Package__
+<br>__Concurrently NPM Package__
 <p>As this project requires running React and JSON server at the sametime, it means you would normally have to open two Terminal sessions to run both services.</p>
-<p>However, with 'Concurrently, you can run mulitple services simutaneously' using only one terminal, which is very usefull.</p>
+<p>However, with 'Concurrently' you can run mulitple services simutaneously' using only one terminal session, which is very usefull.</p>
 <p>To use 'Concurently', run the following command in your terminal to install it;
 </p>
 
@@ -87,9 +88,9 @@ npm install -g concurrently
 
 
 <br>__Package.json file__
-<p>In order for 'Concurrently' to work, we also need to modify the 'Start' command in the 'scripts' section of the Package.json file located in the root of the project, to allow it to run both services simutaneously when its executed.
+<p>In order for 'Concurrently' to work, we also need to modify the 'Start' value in the 'scripts' section of the Package.json file located in the root of the project. This will allow us to run both services (React.JS/JSON Server) simutaneously when its executed.
 </p>
-<p>Copy the settings below to your file.</p>
+<p>Use the settings below in your Package.json file.</p>
 
 ````json
   "scripts": {
@@ -101,11 +102,13 @@ npm install -g concurrently
 ````
 
 ### -JSON Server via Heroku Remote Server
-<p>To use the remote version of JSON Server, follow the instructions from Heroku [here](https://elements.heroku.com/buttons/eecs130/json-server-heroku).</p>
+<p>To use the remote version of JSON Server, follow the instructions from Heroku below;
 
-<p>In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, sitated at '/data/db.json/', but ignore the instructions in 'How it works' for port settings.</p>
+[Heorku Remote JSON Server Instructions](https://elements.heroku.com/buttons/eecs130/json-server-heroku)</p>
 
-__JSON File example__
+*In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, sitated at '/data/db.json/', but ignore the instructions in 'How it works' for port settings at the end.*
+
+__db.JSON File example__
 ````json
 {
   "blogs": [
@@ -138,7 +141,7 @@ __Package.json File__
 ````
 
 __.env file__<br>
-<p>To connect to your JSON Server change the value in the .env file which is situated in the root of the site.</p>
+<p>To connect to your JSON Server change the path value in the .env file which is situated in the root of the site to your Heroku server.</p>
 
 <p>Change the path value from;</p>
 
@@ -160,7 +163,7 @@ __Example__
 # REACT_APP_API_PATH="http://localhost:8000/blogs"
 
 # JSON SERVER REMOTE
-REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"
+REACT_APP_API_PATH="https://XXXX/blogs"
 ````
 
 
@@ -170,7 +173,12 @@ REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"
 ```sh
 npm start
 ```
-<p>After a few seconds, your browser should automatically open to the following link: '[http://localhost:3000](http://localhost:3000)' and display the project in the browser.</p>
+<p>After a few seconds, your browser should automatically open to the following link;
+
+[http://localhost:3000](http://localhost:3000)
+
+and display the project in the browser.</p>
+![Mojo Blog Preview](./src/images/mojo-blog2.png)
 
 
 ## Author
