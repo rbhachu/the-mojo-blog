@@ -145,7 +145,9 @@ __.env file__<br>
 ````json
 __*REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"*__
 ````
+
 <p>to the path of your Remote JSON server on Heroku.</p>
+
 
 ````json
 __*REACT_APP_API_PATH="https://XXXX/blogs"*__
@@ -153,7 +155,7 @@ __*REACT_APP_API_PATH="https://XXXX/blogs"*__
 
 __Example__
 
-````
+````json
 # JSON SERVER LOCAL
 # REACT_APP_API_PATH="http://localhost:8000/blogs"
 
