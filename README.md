@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/gelstudios/gitfiti.svg?branch=master)](https://travis-ci.org/gelstudios/gitfiti)
+[![Build Status](https://travis-ci.org/gelstudios/gitfiti.svg?branch=master)](https://travis-ci.org/gelstudios/gitfiti) [![Netlify Status](https://api.netlify.com/api/v1/badges/9524e046-b151-441a-9840-7fef87d75c23/deploy-status)](https://app.netlify.com/sites/rbhachu-the-mojo-blog/deploys)
 
 <h1 align="center">The Mojo React.js Blog</h1>
 <div align="center">
@@ -18,14 +18,15 @@
     <li>Create a New Post</li>
     <li>Delete a Post</li>        
     <li>View All Posts</li>
-    <li>View Single Post via dynamic page link</li>    
+    <li>View Single Post via dynamic page link</li>
+    <li>Error 404 Page</li>    
   </ul>
 
 ## Dependencies/NPM Modules
 __The following dependencies are required to run this project;__
 
 [React v17.02 *](https://www.npmjs.com/package/react) - Used for site framework with React Hooks. Fetch to connect to REST API and convert to useable JSON format.<br>
-[React Router Dom v5.2.0 *](https://www.npmjs.com/package/react-router-dom) - Used for Pagination and History<br>
+[React Router Dom v5.2.0 *](https://www.npmjs.com/package/react-router-dom) - Used for Pagination, History and Error 404 Page.<br>
 [Concurently v6.0.2 **](https://www.npmjs.com/package/concurrently) - Used to run multiple services from a single terminal session.<br>
 [JSON Server v5 (Local only) **](https://www.npmjs.com/package/json-server) - Used to run a local machine version of the JSON API Server.<br>
 [Heroku (Remote only) **](https://elements.heroku.com/buttons/eecs130/json-server-heroku) - Used to run and host a remote version of the JSON API Server via Heroku servers (free too!).<br><br>
@@ -34,18 +35,18 @@ __The following dependencies are required to run this project;__
 
 
 ## Installation Instructions
-<p>Open your Code Editor and 'CD' into your working directory, then download the repo.<p>
+<p>Open your Code Editor and 'CD' into your working directory, then download the repo to that location.<p>
 
 ```sh
 git clone https://github.com/rbhachu/the-mojo-blog.git
 ```
-<p>Once the repo has been downloaded, install it.<p>
+<p>Once the repo has been downloaded, 'CD' to the newly downloaded project folder; 'cd the-mojo-blog'.<p>
 
 ```sh
 npm install
 ```
 
-<p>You then need to decide if you would like to run JSON server via your 'Local Machine' or 'Remotely' via Heorku servers (free).<p>
+<p>Next you need to decide if you would like to run JSON server via your 'Local Machine' or 'Remotely' via Heorku servers (free).<p>
 
 
 ### -JSON Server via Local Machine
@@ -64,14 +65,10 @@ $ npx json-server --watch data/db.json --port 8000
 
 <br>__.env file__ (file path: ./.env/)
 <p>Situated in the root of the project is the .env file. This file contains settings for connecting to the Local JSON Server.</p>
-<p>Ensure that the settings match the example below  (change the port number '8000' if you want to use a different value).</p>
+<p>Copy the settings below (change the port number '8000' if you want to use a different value).</p>
 
 ````
-# JSON SERVER LOCAL
 REACT_APP_API_PATH="http://localhost:8000/blogs"
-
-# JSON SERVER REMOTE
-# REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"
 ````
 
 <br>__Concurrently NPM Package__
@@ -92,7 +89,7 @@ npm install -g concurrently
 </p>
 <p>Use the settings below in your Package.json file. *</p>
 
-*_port value is 8000, change this if required to your desired port value, but ensure it matches with port value in .env file too._
+*_port value is 8000, change this if required to your desired port value, but ensure it matches with port value in .env file too above._
 
 ````json
   "scripts": {
@@ -143,28 +140,11 @@ __Package.json File__ (file path: ./package.json/)
 ````
 
 __.env file__ (file path: ./.env/)
-<p>To connect to your JSON Server change the path value in the .env file which is situated in the root of the site to your Heroku server.</p>
+<p>To connect to your JSON Server add it using the format below, replacing 'XXXX' with your server link.</p>
 
-<p>Change the path value from;</p>
-
-````json
-REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"
-````
-
-<p>to the path of your Remote JSON server on Heroku.</p>
-
+*for example: REACT_APP_API_PATH="https://myherokuserverlink.herokuapp.com/blogs"*
 
 ````json
-REACT_APP_API_PATH="https://XXXX/blogs"
-````
-
-__Example__
-
-````json
-# JSON SERVER LOCAL
-# REACT_APP_API_PATH="http://localhost:8000/blogs"
-
-# JSON SERVER REMOTE
 REACT_APP_API_PATH="https://XXXX/blogs"
 ````
 

@@ -4,8 +4,8 @@ import { useHistory } from 'react-router-dom'; // import ability to useHistory f
 const Create = () => {
 
   // input states
-  const [postTitle, setpostTitle] = useState('Default Title Place Holder'); // postTitle state
-  const [body, setBody] = useState('Add Body Text Here'); // body state
+  const [postTitle, setpostTitle] = useState('Add Title'); // postTitle state
+  const [body, setBody] = useState('Add Post'); // body state
   const [author, setAuthor] = useState('mario'); // author state
   const [isPending, setIsPending] = useState(false); // set to 'false' to show submit button
   const history = useHistory();
