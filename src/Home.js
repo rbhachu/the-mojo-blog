@@ -11,7 +11,7 @@ const Home = () => {
     <> 
       { error && <div>{ error }</div> } 
       { fetchstatus && <div>Loading...<br /><br /></div> }
-      { fetchdata && <BlogList blogs={fetchdata} title="All Blogsssss!" /> }      
+      { fetchdata && <BlogList blogs={fetchdata} title="All Blogs!" /> }      
     </>
   );
 
