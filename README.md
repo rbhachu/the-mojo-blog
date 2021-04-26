@@ -73,14 +73,22 @@ REACT_APP_API_PATH="http://localhost:8000/blogs"
 # JSON SERVER REMOTE
 # REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"
 ````
-
+__Package.json__
+````json
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+````
 
 ### JSON Server via Heroku Remote Server
 <p>To use the remote version of JSON Server, follow the instructions from Heroku here.</p>
 
 <p>In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, sitated at '/data/db.json/'</p>
 
-/data/db.json
+__JSON File__
 ````json
 {
   "blogs": [
@@ -100,19 +108,19 @@ REACT_APP_API_PATH="http://localhost:8000/blogs"
 }
 ````
 
+<p>Amend Package.json file so the scripts section is as follows;</p>
 
+__Package.json File__
+````json
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+````
 
-```json
-{
-  "links": {
-    "website": "[YOUR_WEBSITE_URL]",
-    "linkedin": "https://www.linkedin.com/in/<YOUR_LINKEDIN_USERNAME>",
-    "github": "https://github.com/<YOUR_GH_USERNAME>"
-
-}
-```
-
-__.env file__><br>
+__.env file__<br>
 To run and use JSON Server remotley, change the value in REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs" to the path to your Remote JSON server on Heroku.
 
 ````
@@ -125,7 +133,7 @@ REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"
 
 
 ## Useage Instructions
-<p>modify package.json??? this is done above if local or remote</p>
+<p>Finally, to run the Blog, simply execute the followiging command in your terminal (ensuring you are in the correct project directory too).</p>
 
 ```sh
 npm start
