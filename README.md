@@ -1,33 +1,32 @@
 [![Build Status](https://travis-ci.org/gelstudios/gitfiti.svg?branch=master)](https://travis-ci.org/gelstudios/gitfiti)
 
-<h1 align="center">Repo Name</h1>
+<h1 align="center">The Mojo React.js Blog</h1>
 
 To see the live demo, click [here](https://rbhachu-the-mojo-blog.netlify.app/) :rocket:
 ![Mojo Blog Preview](./src/images/mojo-blog.png)
 
 
 ## Description
-<p>Add Description</p>
-A simple React.js Blog allowing you to view, create and delete posts.
+<p>A simple React.js Blog using custom hooks, with a REST API connected to a JSON Server, plus React Router Dom for pagination and redirects.</p>
 
 ## Features
-<p>Add Details</p>
+<p>Project features:</p>
   <ul>
     <li>View All Posts</li>
-    <li>View Single Post with page link</li>
-    <li>Create New Posts</li>
-    <li>Delete Posts</li>        
+    <li>View Single Post via page link</li>
+    <li>Create New Post</li>
+    <li>Delete Post</li>        
   </ul>
 
 ## Dependencies/NPM Modules
 <p>The following dependencies are required to run the project</p>
 
-[* React v17.02](https://www.npmjs.com/package/react) - Used for Site framework, including React Hooks. Fetch to connect Api and convert to useable JSON format.<br>
-[* React Router Dom v5.2.0](https://www.npmjs.com/package/react-router-dom) - Used for Pagination and History<br>
-[** JSON Server on Local Machine](https://www.npmjs.com/package/json-server) - Used to create a JSON API Server.<br>
-[** JSON Server on Heroku](https://elements.heroku.com/buttons/eecs130/json-server-heroku) - Used to host JSON API Server remotely on Heroku servers.
-* Installed automatically<br>
-** Requires seperate manual installation
+[React v17.02 *](https://www.npmjs.com/package/react) - Used for Site framework, including React Hooks. Fetch to connect to REST API and convert to useable JSON format.<br>
+[React Router Dom v5.2.0 *](https://www.npmjs.com/package/react-router-dom) - Used for Pagination and History<br>
+[JSON Server on Local Machine **](https://www.npmjs.com/package/json-server) - Used to create a JSON API Server.<br>
+[JSON Server on Heroku **](https://elements.heroku.com/buttons/eecs130/json-server-heroku) - Used to host JSON API Server remotely on Heroku servers.<br><br>
+*_Installed automatically_<br>
+**_Requires seperate manual installation_
 
 
 ## Installation Instructions
