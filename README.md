@@ -84,7 +84,7 @@ npm install -g concurrently
 
 
 <br>__Package.json__ (file path: ./package.json/)
-<p>In order for 'Concurrently' to work, we also need to modify the 'Start' value in the 'scripts' section of the Package.json file located in the root of the project. This will allow us to run both services (React.JS/JSON Server) simutaneously when its executed.
+<p>In order for 'Concurrently' to work, we also need to modify the 'Start' value in the 'scripts' section of the Package.json file located in the root of the project. This will allow us to run both services (React.JS/JSON Server) simultaneously when its executed.
 </p>
 <p>Use the settings below in your Package.json file. *</p>
 
