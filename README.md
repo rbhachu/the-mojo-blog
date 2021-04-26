@@ -2,15 +2,15 @@
 
 <h1 align="center">The Mojo React.js Blog</h1>
 
-To see the live demo, click [here](https://rbhachu-the-mojo-blog.netlify.app/) :rocket:
+View Live Demo **[here](https://rbhachu-the-mojo-blog.netlify.app/)** :rocket:
 ![Mojo Blog Preview](./src/images/mojo-blog.png)
 
 
 ## Description
-<p>A simple React.js Blog using custom hooks, with a REST API connected to a JSON Server, plus React Router Dom for pagination and redirects.</p>
+<p>A simple React.js Blog using custom hooks, with a REST API connected to a JSON Server. Plus pagination and redirects with React Router Dom.</p>
 
 ## Features
-<p>Project features:</p>
+**Project features:**
   <ul>
     <li>View All Posts</li>
     <li>View Single Post via page link</li>
@@ -19,7 +19,7 @@ To see the live demo, click [here](https://rbhachu-the-mojo-blog.netlify.app/) :
   </ul>
 
 ## Dependencies/NPM Modules
-<p>The following dependencies are required to run the project</p>
+**The following dependencies are required to run the project**
 
 [React v17.02 *](https://www.npmjs.com/package/react) - Used for Site framework, including React Hooks. Fetch to connect to REST API and convert to useable JSON format.<br>
 [React Router Dom v5.2.0 *](https://www.npmjs.com/package/react-router-dom) - Used for Pagination and History<br>
