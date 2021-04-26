@@ -159,7 +159,7 @@ npm start
 [http://localhost:3000](http://localhost:3000)
 
 and display the project in the browser.</p>
-![Mojo Blog Preview](./src/images/mojo-blog2.png)
+![Mojo Blog Preview](./src/images/localhost-preview.png)
 
 
 ## Author
