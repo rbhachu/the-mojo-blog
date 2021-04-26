@@ -22,7 +22,7 @@
   </ul>
 
 ## Dependencies/NPM Modules
-<p>The following dependencies are required to run this project;</p>
+__The following dependencies are required to run this project;__
 
 [React v17.02 *](https://www.npmjs.com/package/react) - Used for site framework with React Hooks. Fetch to connect to REST API and convert to useable JSON format.<br>
 [React Router Dom v5.2.0 *](https://www.npmjs.com/package/react-router-dom) - Used for Pagination and History<br>
@@ -45,7 +45,7 @@ git clone https://github.com/rbhachu/the-mojo-blog.git
 npm install
 ```
 
-<p>You then need to decide weather to run JSON server via your 'Local Machine' or 'Remotely' via Heorku servers (free).<p>
+<p>You then need to decide if you would like to run JSON server via your 'Local Machine' or 'Remotely' via Heorku servers (free).<p>
 
 
 ### -JSON Server via Local Machine
@@ -62,7 +62,7 @@ $ npx json-server --watch data/db.json --port 8000
 </ul>
 
 
-<br>__.env file__
+<br>__.env file__ (file path: ./.env/)
 <p>Situated in the root of the project is the .env file. This file contains settings for connecting to the Local JSON Server.</p>
 <p>Ensure that the settings match the example below  (change the port number '8000' if you want to use a different value).</p>
 
@@ -87,10 +87,12 @@ npm install -g concurrently
 ````
 
 
-<br>__Package.json file__
+<br>__Package.json__ (file path: ./package.json/)
 <p>In order for 'Concurrently' to work, we also need to modify the 'Start' value in the 'scripts' section of the Package.json file located in the root of the project. This will allow us to run both services (React.JS/JSON Server) simutaneously when its executed.
 </p>
-<p>Use the settings below in your Package.json file.</p>
+<p>Use the settings below in your Package.json file. *</p>
+
+*_port value is 8000, change this if required to your desired port value, but ensure it matches with port value in .env file too._
 
 ````json
   "scripts": {
@@ -108,7 +110,7 @@ npm install -g concurrently
 
 *In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, sitated at '/data/db.json/', but ignore the instructions in 'How it works' for port settings at the end.*
 
-__db.JSON File example__
+__db.JSON File example__ (file path: ./data/db.json)
 ````json
 {
   "blogs": [
@@ -130,7 +132,7 @@ __db.JSON File example__
 
 <p>As JSON server is running remoteley, we only need to run 'React' localy, therefore ensure that Package.json file is set as follows so it only runs 'React' when we execute the 'npm start' command in the terminal.</p>
 
-__Package.json File__
+__Package.json File__ (file path: ./package.json/)
 ````json
   "scripts": {
     "start": "react-scripts start",
@@ -140,7 +142,7 @@ __Package.json File__
   },
 ````
 
-__.env file__<br>
+__.env file__ (file path: ./.env/)
 <p>To connect to your JSON Server change the path value in the .env file which is situated in the root of the site to your Heroku server.</p>
 
 <p>Change the path value from;</p>
