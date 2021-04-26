@@ -3,38 +3,37 @@
 <h1 align="center">Repo Name</h1>
 
 To see the live demo, click [here](https://rbhachu-the-mojo-blog.netlify.app/) :rocket:
-
-<div style="border:1px solid #000">
-
 ![Mojo Blog Preview](./src/images/mojo-blog.png)
 
-</div>
 
 ## Description
 <p>Add Description</p>
-  (add screenshots? no)
-
+A simple React.js Blog allowing you to view, create and delete posts.
 
 ## Features
 <p>Add Details</p>
-  (add screenshots, show what it can do?)
+  <ul>
+    <li>View All Posts</li>
+    <li>View Single Post with page link</li>
+    <li>Create New Posts</li>
+    <li>Delete Posts</li>        
+  </ul>
 
-
-## Dependencies/NPM Modules?
+## Dependencies/NPM Modules
 <p>Add Details</p>
 
-[module 1](https://rbhachu-the-mojo-blog.netlify.app/)<br>
-[module 2](https://rbhachu-the-mojo-blog.netlify.app/)<br>
-[module 3](https://rbhachu-the-mojo-blog.netlify.app/)<br>
-[module 4](https://rbhachu-the-mojo-blog.netlify.app/)
+[React v17.02](https://www.npmjs.com/package/react) - Used for Site framework, including React Hooks. Fetch to connect Api and convert to useable JSON format.<br>
+[React Router Dom v5.2.0](https://www.npmjs.com/package/react-router-dom) - Used for Pagination and History<br>
+[JSON Server](https://www.npmjs.com/package/json-server) - Used to create a JSON API Server (Local Only)<br>
+[JSON Server](https://www.npmjs.com/package/json-server) - Used to host JSON API Server remotely on Heroku servers (Remote Only).
 
 
 ## Installation Instructions
-<p>Add details for Local Machine/Remote Server</p>
+<p>Depending on weather you are running the project Locally or Remotely, please see instructions below;</p>
 <br>
 
 __Local Machine__
-<p>Add Details Local Machine/Remote Server</p>
+<p>To run the project Locally...</p>
 <br>
 
 ```sh
@@ -42,7 +41,7 @@ npm install
 ```
 
 ### Remote Server
-<p>Add Details Local Machine/Remote Server</p>
+<p>To run the project Remotely...</p>
 <br>
 
 ```sh
