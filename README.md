@@ -14,10 +14,10 @@ View Live Demo **[here](https://rbhachu-the-mojo-blog.netlify.app/)** :rocket:
 ## Features
 **Project features:**
   <ul>
+    <li>Create a New Post</li>
+    <li>Delete a Post</li>        
     <li>View All Posts</li>
-    <li>View Single Post via page link</li>
-    <li>Create New Post</li>
-    <li>Delete Post</li>        
+    <li>View Single Post via dynamic page link</li>    
   </ul>
 
 ## Dependencies/NPM Modules
@@ -26,8 +26,8 @@ View Live Demo **[here](https://rbhachu-the-mojo-blog.netlify.app/)** :rocket:
 [React v17.02 *](https://www.npmjs.com/package/react) - Used for site framework with React Hooks. Fetch to connect to REST API and convert to useable JSON format.<br>
 [React Router Dom v5.2.0 *](https://www.npmjs.com/package/react-router-dom) - Used for Pagination and History<br>
 [Concurently v6.0.2 **](https://www.npmjs.com/package/concurrently) - Used to run multiple services from a single terminal session.<br>
-[JSON Server v5 (Local) **](https://www.npmjs.com/package/json-server) - Used to run a local machine version of the JSON API Server.<br>
-[Heroku (Remote) **](https://elements.heroku.com/buttons/eecs130/json-server-heroku) - Used to run and host a remote version of the JSON API Server via Heroku servers (free too!).<br><br>
+[JSON Server v5 (Local only) **](https://www.npmjs.com/package/json-server) - Used to run a local machine version of the JSON API Server.<br>
+[Heroku (Remote only) **](https://elements.heroku.com/buttons/eecs130/json-server-heroku) - Used to run and host a remote version of the JSON API Server via Heroku servers (free too!).<br><br>
 *_Installed automatically_<br>
 **_Requires seperate manual installation_
 
@@ -59,12 +59,11 @@ $ npx json-server --watch data/db.json --port 8000
   <li>--watch : path to JSON file in project for JSON server to edit/monitor (data/db.json)</li>
   <li>--port : port to run JSON Server (8000 is used, so it does not conflict with REACT's  default port of '3000' which is used to run site.). You can change this port if you have issues to another number that is not 3000.</li>
 </ul>
-<br>
 
-__.env file__<br>
-Situated in the root of the project is the .env file. This file contains settings for the JSON Server.
 
-Ensure that the settings match the example below  (change the port number '8000' if you want to use a different value).
+<br>__.env file__
+<p>Situated in the root of the project is the .env file. This file contains settings for connecting to the Local JSON Server.</p>
+<p>Ensure that the settings match the example below  (change the port number '8000' if you want to use a different value).</p>
 
 ````
 # JSON SERVER LOCAL
@@ -74,21 +73,21 @@ REACT_APP_API_PATH="http://localhost:8000/blogs"
 # REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"
 ````
 
-__Concurently NPM Package__
-<p>As this project requires running React and JSON server at the sametime, it means you would normally have to open to two Terminal sessions to run both services.</p>
+<br>__Concurently NPM Package__
+<p>As this project requires running React and JSON server at the sametime, it means you would normally have to open two Terminal sessions to run both services.</p>
 <p>However, with 'Concurrently, you can run mulitple services simutaneously' using only one terminal, which is very usefull.</p>
-<p>To use 'Concurently', run the following command in your terminal;
+<p>To use 'Concurently', run the following command in your terminal to install it;
 </p>
+
+*Reference: [Concurently NPM Module](https://www.npmjs.com/package/concurrently)*
 
 ````sh
 npm install -g concurrently
 ````
 
-*Reference: [Concurently](https://www.npmjs.com/package/concurrently)*
 
-
-__Package.json file__
-<p>In order for 'Concurrently' to work, we need to modify the 'Start' command in the 'scripts' section of the Package.json file, to allow it to run both services when its executed.
+<br>__Package.json file__
+<p>In order for 'Concurrently' to work, we also need to modify the 'Start' command in the 'scripts' section of the Package.json file located in the root of the project, to allow it to run both services simutaneously when its executed.
 </p>
 <p>Copy the settings below to your file.</p>
 
@@ -102,7 +101,7 @@ __Package.json file__
 ````
 
 ### -JSON Server via Heroku Remote Server
-<p>To use the remote version of JSON Server, follow the instructions from Heroku here.</p>
+<p>To use the remote version of JSON Server, follow the instructions from Heroku [here](https://elements.heroku.com/buttons/eecs130/json-server-heroku).</p>
 
 <p>In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, sitated at '/data/db.json/'</p>
 
@@ -141,12 +140,16 @@ __Package.json File__
 __.env file__<br>
 <p>To connect to your JSON Server change the value in the .env file which is situated in the root of the site.</p>
 
-<p>Change the path value from<br>
+<p>Change the path value from;</p>
 
+````json
 __*REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"*__
-<br>to the path of your Remote JSON server on Heroku.<br>
+````
+<p>to the path of your Remote JSON server on Heroku.</p>
+
+````json
 __*REACT_APP_API_PATH="https://XXXX/blogs"*__
-<br>
+````
 
 __Example__
 
@@ -165,7 +168,7 @@ REACT_APP_API_PATH="https://blooming-lowlands-04146.herokuapp.com/blogs"
 ```sh
 npm start
 ```
-<p>After a few seconds, your browser should automatically open to the following link: 'http://localhost:3000' and display the project.</p>
+<p>After a few seconds, your browser should automatically open to the following link: '[http://localhost:3000](http://localhost:3000)' and display the project in the browser.</p>
 
 
 ## Author
