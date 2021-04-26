@@ -25,7 +25,8 @@ View Live Demo **[here](https://rbhachu-the-mojo-blog.netlify.app/)** :rocket:
 
 [React v17.02 *](https://www.npmjs.com/package/react) - Used for site framework with React Hooks. Fetch to connect to REST API and convert to useable JSON format.<br>
 [React Router Dom v5.2.0 *](https://www.npmjs.com/package/react-router-dom) - Used for Pagination and History<br>
-[JSON Server (Local) **](https://www.npmjs.com/package/json-server) - Used to run a local machine version of the JSON API Server.<br>
+[Concurently v6.0.2 **](https://www.npmjs.com/package/concurrently) - Used to run multiple services from a single terminal session.<br>
+[JSON Server v5 (Local) **](https://www.npmjs.com/package/json-server) - Used to run a local machine version of the JSON API Server.<br>
 [Heroku (Remote) **](https://elements.heroku.com/buttons/eecs130/json-server-heroku) - Used to run and host a remote version of the JSON API Server via Heroku servers (free too!).<br><br>
 *_Installed automatically_<br>
 **_Requires seperate manual installation_
