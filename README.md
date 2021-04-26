@@ -20,12 +20,14 @@ A simple React.js Blog allowing you to view, create and delete posts.
   </ul>
 
 ## Dependencies/NPM Modules
-<p>Add Details</p>
+<p>The following dependencies are required to run the project</p>
 
-[React v17.02](https://www.npmjs.com/package/react) - Used for Site framework, including React Hooks. Fetch to connect Api and convert to useable JSON format.<br>
-[React Router Dom v5.2.0](https://www.npmjs.com/package/react-router-dom) - Used for Pagination and History<br>
-[JSON Server](https://www.npmjs.com/package/json-server) - Used to create a JSON API Server (Local Only)<br>
-[JSON Server](https://www.npmjs.com/package/json-server) - Used to host JSON API Server remotely on Heroku servers (Remote Only).
+[* React v17.02](https://www.npmjs.com/package/react) - Used for Site framework, including React Hooks. Fetch to connect Api and convert to useable JSON format.<br>
+[* React Router Dom v5.2.0](https://www.npmjs.com/package/react-router-dom) - Used for Pagination and History<br>
+[** JSON Server on Local Machine](https://www.npmjs.com/package/json-server) - Used to create a JSON API Server.<br>
+[** JSON Server on Heroku](https://elements.heroku.com/buttons/eecs130/json-server-heroku) - Used to host JSON API Server remotely on Heroku servers.
+* Installed automatically<br>
+** Requires seperate manual installation
 
 
 ## Installation Instructions
