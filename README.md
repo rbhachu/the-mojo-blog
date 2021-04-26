@@ -72,11 +72,11 @@ REACT_APP_API_PATH="http://localhost:8000/blogs"
 ````
 
 <br>__Concurrently NPM Package__
-<p>As this project requires running React and JSON server at the sametime, it means you would normally have to open two Terminal sessions to run both services.</p>
-<p>However, with 'Concurrently' you can run mulitple services simutaneously' using only one terminal session, which is very usefull.</p>
-<p>To use 'Concurently', run the following command in your terminal to install it;</p>
+<p>As this project requires running React and JSON server at the same time, it means you would normally have to open two Terminal sessions to run both services.</p>
+<p>However, with 'Concurrently' you can run multiple services simultaneously' using only one terminal session, which is very useful.</p>
+<p>To use 'Concurrently', run the following command in your terminal to install it;</p>
 
-*Reference: [Concurently NPM Module](https://www.npmjs.com/package/concurrently)*
+*Reference: [Concurrently NPM Module](https://www.npmjs.com/package/concurrently)*
 
 ````sh
 npm install -g concurrently
@@ -102,9 +102,9 @@ npm install -g concurrently
 ### -JSON Server via Heroku Remote Server
 <p>To use the remote version of JSON Server, follow the instructions from Heroku below;
 
-[Heorku Remote JSON Server Instructions](https://elements.heroku.com/buttons/eecs130/json-server-heroku)</p>
+[Heroku Remote JSON Server Instructions](https://elements.heroku.com/buttons/eecs130/json-server-heroku)</p>
 
-*In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, sitated at '/data/db.json/', but ignore the instructions in 'How it works' for port settings at the end.*
+*In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, situated at '/data/db.json/', but ignore the instructions in 'How it works' for port settings at the end.*
 
 __db.JSON File example__ (file path: ./data/db.json)
 ````json
@@ -126,7 +126,7 @@ __db.JSON File example__ (file path: ./data/db.json)
 }
 ````
 
-<p>As JSON server is running remoteley, we only need to run 'React' localy, therefore ensure that Package.json file is set as follows so it only runs 'React' when we execute the 'npm start' command in the terminal.</p>
+<p>As JSON server is running remotely, we only need to run 'React' locally, therefore ensure that Package.json file is set as follows so it only runs 'React' when we execute the 'npm start' command in the terminal.</p>
 
 __Package.json File__ (file path: ./package.json/)
 ````json
@@ -148,7 +148,7 @@ REACT_APP_API_PATH="https://XXXX/blogs"
 ````
 
 
-## Useage Instructions
+## Usage Instructions
 <p>Finally, to run the Blog, simply execute the following command in your terminal (ensuring you are in the correct project directory too).</p>
 
 ```sh
