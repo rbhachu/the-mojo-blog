@@ -101,11 +101,17 @@ REACT_APP_API_PATH="http://localhost:8000/blogs"
 ### -JSON Server via Heroku Remote Server
 <p>To use the remote version of JSON Server, follow the instructions from Heroku below;
 
-[Heroku Remote JSON Server Instructions](https://elements.heroku.com/buttons/eecs130/json-server-heroku)</p>
+[Heroku Remote JSON Server Instructions](https://elements.heroku.com/buttons/eecs130/json-server-heroku)<br />
+
+[JSON Server Back-End Repo](https://github.com/rbhachu/JSON-Server-Heroku)
+<br />
 
 *In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, located at '/data/db.json/', and ignore the instructions in 'How it works' for port settings at the end.*
+<br />
 
 __db.JSON File example__ (file path: ./data/db.json)
+</p>
+
 ````json
 {
   "blogs": [
