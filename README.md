@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/gelstudios/gitfiti.svg?branch=master)](https://travis-ci.org/gelstudios/gitfiti) [![Netlify Status](https://api.netlify.com/api/v1/badges/9524e046-b151-441a-9840-7fef87d75c23/deploy-status)](https://app.netlify.com/sites/rbhachu-the-mojo-blog/deploys)
+[![Build Status](https://travis-ci.org/gelstudios/gitfiti.svg?branch=master)](https://travis-ci.org/gelstudios/gitfiti) [![Heroku](https://heroku-badge.herokuapp.com/?app=rbhachu-the-mojo-blog)](https://github.com/rbhachu/the-mojo-blog)
 
 <h1 align="center">The Mojo React.js Blog</h1>
 <div align="center">
 
-:rocket: **[View Live Demo](https://rbhachu-the-mojo-blog.netlify.app/)** :rocket:<br>
+:rocket: **[View Live Demo](https://rbhachu-the-mojo-blog.herokuapp.com)** :rocket:<br>
 
 ![Mojo Blog Preview](./src/images/site-demo.gif)
 
@@ -27,9 +27,7 @@ __The following dependencies are required to run this project;__
 
 [React v17.02 *](https://www.npmjs.com/package/react) - Used for site framework with React Hooks. Fetch to connect to REST API and convert to useable JSON format.<br>
 [React Router Dom v5.2.0 *](https://www.npmjs.com/package/react-router-dom) - Used for Pagination, History and Error 404 Page.<br>
-[Concurrently v6.0.2 **](https://www.npmjs.com/package/concurrently) - Used to run multiple services from a single terminal session.<br>
-[JSON Server v5 (Local only) **](https://www.npmjs.com/package/json-server) - Used to run a local machine version of the JSON API Server.<br>
-[Heroku (Remote only) **](https://elements.heroku.com/buttons/eecs130/json-server-heroku) - Used to run and host a remote version of the JSON API Server via Heroku servers (free too!).<br><br>
+[Concurrently v6.0.2 **](https://www.npmjs.com/package/concurrently) - Used to run multiple services from a single terminal session (only required to run JSON server locally).<br>
 *_Installed automatically_<br>
 **_Requires separate manual installation_
 
@@ -45,36 +43,18 @@ git clone https://github.com/rbhachu/the-mojo-blog.git
 ```sh
 npm install
 ```
+----------
 
-<p>Next you need to decide if you would like to run JSON server via your 'Local Machine' or 'Remotely' via Heroku servers (free).<p>
+<p>Next you need to decide if you would like to run JSON server via your 'Local Machine' (locally) or 'Remotely' via Heroku servers (free).<p>
 
 
 ### -JSON Server via Local Machine
-<p>To run locally you will need to install JSON Server.</p>
+<p>To run the site locally you will need to install the Concurrently NPM package.</p>
 
-*Reference: [JSON Server NPM Module](https://www.npmjs.com/package/json-server)*
-
-```sh
-$ npx json-server --watch data/db.json --port 8000
-```
-<ul>
-  <li>--watch : path to JSON file in project for JSON server to edit/monitor (data/db.json)</li>
-  <li>--port : port to run JSON Server (8000 is used, so it does not conflict with REACT's  default port of '3000' which is used to run site.). You can change this port if you have issues to another number that is not 3000.</li>
-</ul>
-
-
-<br>__.env file__ (file path: ./.env/)
-<p>Situated in the root of the project is the .env file. This file contains settings for connecting to the Local JSON Server.</p>
-<p>Copy the settings below (change the port number '8000' if you want to use a different value).</p>
-
-````
-REACT_APP_API_PATH="http://localhost:8000/blogs"
-````
 
 <br>__Concurrently NPM Package__
-<p>As this project requires running React and JSON server at the same time, it means you would normally have to open two Terminal sessions to run both services.</p>
-<p>However, with 'Concurrently' you can run multiple services simultaneously' using only one terminal session, which is very useful.</p>
-<p>To use 'Concurrently', run the following command in your terminal to install it;</p>
+<p>Concurrently allows multiple terminal services to be executed.... (wait for it...) 'Concurrently' 😁. Which is perfect for our requirements, as we will need to run the Mojo Blog Client front-end, simultaneously with the back-end JSON server Rest API.</p>
+<p>To install 'Concurrently', run the following command in your terminal to install it;</p>
 
 *Reference: [Concurrently NPM Module](https://www.npmjs.com/package/concurrently)*
 
@@ -82,9 +62,8 @@ REACT_APP_API_PATH="http://localhost:8000/blogs"
 npm install -g concurrently
 ````
 
-
 <br>__Package.json__ (file path: ./package.json/)
-<p>In order for 'Concurrently' to work, we also need to modify the 'Start' value in the 'scripts' section of the Package.json file located in the root of the project. This will allow us to run both services (React.JS/JSON Server) simultaneously when its executed.
+<p>In order for 'Concurrently' NPM Package to work, we also need to modify the 'Start' value in the 'scripts' section of the Package.json file located in the root of the project. This will allow us to run both the front-end and back-end  simultaneously once executed.
 </p>
 <p>Use the settings below in your Package.json file. *</p>
 
@@ -98,6 +77,27 @@ npm install -g concurrently
     "eject": "react-scripts eject"
   },
 ````
+
+<ul>
+  <li>--watch : path to JSON file in project for JSON server to edit/monitor (data/db.json)</li>
+  <li>--port : port to run JSON Server (8000 is used, so it does not conflict with REACT's  default port of '3000' which is used to run the front-end client.). You can change this port value if you have issues to another number other than 3000.</li>
+</ul>
+
+
+<br>__.env file__ (file path: ./.env/)
+<p>Situated in the root of the project is the .env file. This file contains the settings to connect to the local JSON Server back-end.</p>
+<p>Copy the settings below (change the port number '8000' if you want to use a different value).</p>
+
+````
+REACT_APP_API_PATH="http://localhost:8000/blogs"
+````
+
+<p>
+
+**Now you can skip to the next section called 'Usage Instructions' to finally deploy the Project.**
+</p>
+
+----------
 
 ### -JSON Server via Heroku Remote Server
 <p>To use the remote version of JSON Server, follow the instructions from Heroku below;
@@ -147,6 +147,7 @@ __.env file__ (file path: ./.env/)
 REACT_APP_API_PATH="https://XXXX/blogs"
 ````
 
+----------
 
 ## Usage Instructions
 <p>Finally, to run the Blog, simply execute the following command in your terminal (ensuring you are in the correct project directory too).</p>
