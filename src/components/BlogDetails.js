@@ -1,4 +1,5 @@
 import { useHistory, useParams } from "react-router"; // import useHistory + useParams from ReactRouter to redirect page after submit + get id from url too
+import { Link } from 'react-router-dom'; // for React Router
 import useFetch from "./useFetch"; // import useFetch
 
 const BlogDetails = () => {
@@ -6,6 +7,7 @@ const BlogDetails = () => {
     const { id } = useParams(); // pass id value from url
     const { fetchdata, fetchstatus, error } = useFetch(process.env.REACT_APP_API_PATH + '/' + id); // import states from useFetch
     const history = useHistory(); // invoke useHistory
+
 
     // delete post function
     const handleClick= () => {
@@ -27,6 +29,7 @@ const BlogDetails = () => {
                     <h2>{ fetchdata.postTitle }</h2>
                     <p>Written by { fetchdata.author }</p>
                     <div>{ fetchdata.body }</div>
+                    <Link to="/">Back</Link>
                     <button onClick={handleClick}>Delete</button>
                 </article>
             )}

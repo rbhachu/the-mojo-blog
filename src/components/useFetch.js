@@ -1,13 +1,18 @@
 import { useState, useEffect } from 'react';
 
-const useFetch = (url) => { // import url fetch endpoint as props
+// function UseFetch ({ url }) {
+const useFetch = ( url ) => { // import url fetch endpoint as props
+
+  //console.log(`useFetch: ${url}`); //
+
 
     const [fetchdata, setFetchdata] = useState(null); // state for fetch data
     const [fetchstatus, setFetchStatus] = useState(true); // state for fetch data status
     const [error, setError] = useState(null); // state for error status from fetch data or fetch status
 
+
   // useEffect - pass function as argument each time there is a re-render of the data state 
-  useEffect(() => {
+  useEffect (() => {
 
     const abortCont = new AbortController(); // used to unmount page state on page change to avoid state conflicts
 
@@ -29,6 +34,7 @@ const useFetch = (url) => { // import url fetch endpoint as props
         .then(data => { // final step to get json object as data
           // console.log(data); // check data is being fetched via console
           setFetchdata(data); // update data state to get and use JSON data
+          //setFetchdata(data.results); // update data state to get and use JSON data
           setFetchStatus(false); // show loading... message untill JSON data fetched, then hide
           setError(null); // if no error, set error state status to 'null' so no error message shown
         })
@@ -53,5 +59,8 @@ const useFetch = (url) => { // import url fetch endpoint as props
 
 }
 
+
+
 // export hook as new custom reuseable hook
+//export default UseFetch;
 export default useFetch;

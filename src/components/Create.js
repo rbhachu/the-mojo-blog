@@ -6,7 +6,7 @@ const Create = () => {
   // input states
   const [postTitle, setpostTitle] = useState('Add Title'); // postTitle state
   const [body, setBody] = useState('Add Post'); // body state
-  const [author, setAuthor] = useState('mario'); // author state
+  const [author, setAuthor] = useState('Mario'); // author state
   const [isPending, setIsPending] = useState(false); // set to 'false' to show submit button
   const history = useHistory();
 
@@ -39,7 +39,7 @@ const Create = () => {
     <div className="create">
       <h2>Add a New Blog</h2>
       <form onSubmit={handleSubmit}>
-        <label>Blog title:</label>
+        <label>Blog Title:</label>
         <input 
           type="text" 
           required // user needs to add data
@@ -47,29 +47,23 @@ const Create = () => {
           onChange={(e) => setpostTitle(e.target.value)} // update input state with new typed value
           onClick={(e) => setpostTitle('')} // clear input on click
         />
-        <label>Blog body:</label>
+        <label>Blog Body:</label>
         <textarea
           required // user needs to add data
           value={body} // intial value set in state for body
           onChange={(e) => setBody(e.target.value)} // update input state with new typed value
           onClick={(e) => setBody('')} // clear input on click     
         ></textarea>
-        <label>Blog author:</label>
+        <label>Blog Author:</label>
         <select
           value={author} // intial value set in state for author
           onChange={(e) => setAuthor(e.target.value)} // update state with new selected option
         >
-          <option value="mario">mario</option>
-          <option value="yoshi">yoshi</option>
+          <option value="Mario">Mario</option>
+          <option value="Yoshi">Yoshi</option>
         </select>
         { !isPending && <button>Add Blog</button> }
         { isPending && <button disabled>Adding Blog...</button> }
-
-        { /*
-        <br /><br /><p>Title: { postTitle }</p>
-        <p>Body: { body }</p>
-        <p>Author: { author }</p>
-        */ }
 
       </form>
     </div>
