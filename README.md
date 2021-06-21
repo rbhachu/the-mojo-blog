@@ -20,6 +20,7 @@
     <li>View All Posts</li>
     <li>View Single Post via dynamic page link</li>
     <li>Error 404 Page</li>    
+    <li>PWA Enabled</li>    
   </ul>
 
 ## Dependencies/NPM Modules
@@ -49,12 +50,12 @@ npm install
 
 
 ### -JSON Server via Local Machine
-<p>To run the site locally you will need to install the Concurrently NPM package.</p>
+<p>To run locally, you will first need to install the Concurrently NPM package.</p>
 
 
 <br>__Concurrently NPM Package__
-<p>Concurrently allows multiple terminal services to be executed.... (wait for it...) 'Concurrently' 😁. Which is perfect for our requirements, as we will need to run the Mojo Blog Client front-end, simultaneously with the back-end JSON server Rest API.</p>
-<p>To install 'Concurrently', run the following command in your terminal to install it;</p>
+<p>Concurrently allows multiple terminal services to be executed.... (wait for it...) `concurrently` 😁. Which is perfect for our requirements, as we will need to run the Mojo Blog Client front-end, simultaneously with the back-end JSON server Rest API.</p>
+<p>To install Concurrently, run the following command in your terminal to install it;</p>
 
 *Reference: [Concurrently NPM Module](https://www.npmjs.com/package/concurrently)*
 
@@ -63,11 +64,9 @@ npm install -g concurrently
 ````
 
 <br>__Package.json__ (file path: ./package.json/)
-<p>In order for 'Concurrently' NPM Package to work, we also need to modify the 'Start' value in the 'scripts' section of the Package.json file located in the root of the project. This will allow us to run both the front-end and back-end  simultaneously once executed.
+<p>In order for the Concurrently NPM Package to work, we also need to modify the 'Start' value in the 'scripts' section of the Package.json file located in the root of the project. This will allow us to run both the front-end and back-end services simultaneously once executed.
 </p>
 <p>Use the settings below in your Package.json file. *</p>
-
-*_port value is 8000, change this if required to your desired port value, but ensure it matches with port value in .env file too above._
 
 ````json
   "scripts": {
@@ -80,13 +79,13 @@ npm install -g concurrently
 
 <ul>
   <li>--watch : path to JSON file in project for JSON server to edit/monitor (data/db.json)</li>
-  <li>--port : port to run JSON Server (8000 is used, so it does not conflict with REACT's  default port of '3000' which is used to run the front-end client.). You can change this port value if you have issues to another number other than 3000.</li>
+  <li>--port : port to run JSON Server (8000 is used, so it does not conflict with REACT's  default port of '3000' which is used to run the front-end client.). * You can change this port value if you have issues to another number other than 3000.</li>
 </ul>
 
 
 <br>__.env file__ (file path: ./.env/)
 <p>Situated in the root of the project is the .env file. This file contains the settings to connect to the local JSON Server back-end.</p>
-<p>Copy the settings below (change the port number '8000' if you want to use a different value).</p>
+<p>Copy and replace all settings with the values below (ensure port value is the same as in package.json file above).</p>
 
 ````
 REACT_APP_API_PATH="http://localhost:8000/blogs"
@@ -104,7 +103,7 @@ REACT_APP_API_PATH="http://localhost:8000/blogs"
 
 [Heroku Remote JSON Server Instructions](https://elements.heroku.com/buttons/eecs130/json-server-heroku)</p>
 
-*In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, situated at '/data/db.json/', but ignore the instructions in 'How it works' for port settings at the end.*
+*In step 2 of the instructions from Heroku, use the db.json file from this repo as a template, located at '/data/db.json/', and ignore the instructions in 'How it works' for port settings at the end.*
 
 __db.JSON File example__ (file path: ./data/db.json)
 ````json
