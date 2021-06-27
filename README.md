@@ -1,5 +1,17 @@
 [![Build Status](https://travis-ci.org/gelstudios/gitfiti.svg?branch=master)](https://travis-ci.org/gelstudios/gitfiti) [![Heroku](https://heroku-badge.herokuapp.com/?app=rbhachu-the-mojo-blog)](https://github.com/rbhachu/the-mojo-blog)
 
+
+## Update v1.1
+<p>- New JSON Server created with `House Keeping` feature for the Mojo Blog: https://github.com/rbhachu/JSON-Server-Heroku-HK</p>
+
+<p>- Loading Animation added to replace text</p>
+
+![Mojo Blog Preview](./src/images/loading-status.gif)
+
+-----
+<br>
+<br>
+
 <h1 align="center">The Mojo React.js Blog</h1>
 <div align="center">
 
