@@ -121,3 +121,9 @@ article button {
   margin-top: 30px;
   display: block;
 }
+
+/* center image */
+.center {
+  display: flex;
+  justify-content: center;
+}
