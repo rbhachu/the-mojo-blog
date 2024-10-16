@@ -1,24 +1,21 @@
-import { useHistory, useParams } from "react-router"; // import useHistory + useParams from ReactRouter to redirect page after submit + get id from url too
-import { Link } from 'react-router-dom'; // for React Router
+import { useParams } from "react-router-dom"; // updated to import from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'; // useNavigate replaces useHistory
 import useFetch from "./useFetch"; // import useFetch
 
 const BlogDetails = () => {
 
     const { id } = useParams(); // pass id value from url
     const { fetchdata, fetchstatus, error } = useFetch(process.env.REACT_APP_API_PATH + '/' + id); // import states from useFetch
-    const history = useHistory(); // invoke useHistory
-
+    const navigate = useNavigate(); // useNavigate replaces useHistory
 
     // delete post function
-    const handleClick= () => {
+    const handleClick = () => {
         fetch(process.env.REACT_APP_API_PATH + '/' + id, {
             method: 'DELETE' // delete post command from JSON data file
-        // returns promise
         }).then(() => {
-            history.push('/'); // redirect back to homepage after post delete
-        })
-    
-    }
+            navigate('/'); // use navigate to redirect back to homepage after post delete
+        });
+    };
 
     return ( 
         <div className="blog-details">
